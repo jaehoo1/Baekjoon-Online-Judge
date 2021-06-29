@@ -8,3 +8,10 @@ for _ in range(int(input())*2-1):
 	s+=input()
 print(eval(s.replace('/','//')))
 ```
+  
+ord(char) : 문자의 유니코드 값을 return 한다.  
+ex : 11283번 문제  
+```
+A=ord(input())
+print(A-44031)
+```
