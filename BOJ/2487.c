@@ -24,7 +24,7 @@ int main(void) {
 	long long res;
 	scanf("%d", &N);
 	for(i=1 ; i<=N ; i++)
-		scanf("%lld", &G[i]);
+		scanf("%d", &G[i]);
 	for(i=1 ; i<=N ; i++)
 		if(!visited[i]) {
 			max=1;
