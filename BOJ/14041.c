@@ -31,9 +31,8 @@ void min10(void) {
 
 int main(void) {
 	scanf("%d:%d", &cur.H, &cur.M);
-	while(remain.H||remain.M) {
+	while(remain.H||remain.M)
 		min10();
-	}
 	printf("%02d:%02d", cur.H, cur.M);
 	return 0;
 }
