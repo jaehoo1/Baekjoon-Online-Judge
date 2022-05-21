@@ -38,10 +38,10 @@ void war(int a, int b) {
 }
 
 int main(void) {
-	int N, M, i, O, P, Q;
+	int N, M, O, P, Q;
 	vector<int> v;
 	scanf("%d%d", &N, &M);
-	for(i=1 ; i<=N ; i++) {
+	for(int i=1 ; i<=N ; i++) {
 		scanf("%d", &size[i]);
 		parent[i]=i;
 	}
@@ -52,7 +52,7 @@ int main(void) {
 		else if(O==2)
 			war(P, Q);
 	}
-	for(i=1 ; i<=N ; i++)
+	for(int i=1 ; i<=N ; i++)
 		if(find(i)==i)
 			v.push_back(size[i]);
 	sort(v.begin(), v.end());
