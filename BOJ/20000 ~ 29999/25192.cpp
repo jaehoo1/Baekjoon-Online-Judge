@@ -5,23 +5,23 @@
 using namespace std;
 
 int main(void) {
-	ios_base::sync_with_stdio(false);
+	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
 	
-	int N, cnt=0;
+	int N, cou=0;
 	string s;
-	unordered_set<string> um;
+	unordered_set<string> us;
 	cin>>N;
 	while(N--) {
 		cin>>s;
 		if(s=="ENTER")
-			um.clear();
-		else if(um.find(s)==um.end()) {
-			cnt++;
-			um.insert(s);
+			us=unordered_set<string>();
+		else if(us.find(s)==us.end()) {
+			cou++;
+			us.insert(s);
 		}
 	}
-	cout<<cnt;
+	cout<<cou;
 	return 0;
 }
